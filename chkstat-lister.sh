@@ -11,5 +11,5 @@
 a=(`find ${1}`)
 for x in ${a[@]};
 do
-	echo $x"	"`stat -c %a $x`"	"`stat -c %U $x`":"`stat -c %G $x`
+	echo $x"		"`stat -c %U $x`":"`stat -c %G $x`"					"`stat -c %a $x`
 done
